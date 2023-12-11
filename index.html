@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Live coding: vue-life-cycles </title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
     <div id="app">
         <div>{{ message }}</div>
+        <input type="text" v-model="message">
     </div>
 </body>
 </html>
