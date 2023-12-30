@@ -9,8 +9,12 @@
 </head>
 <body>
     <div id="app">
-        <vue-text text="testo della prop 1"/>
-        <counter />
+        <!-- <vue-text text="testo della prop 1"/> -->
+
+        <vue-button @my-event="eventEmitted"></vue-button>
+        <vue-text :emitted-data="emittedData"></vue-text>
+
+        <!-- <vue-button id="unique-id" type="submit"></vue-button> -->
     </div>
 </body>
 </html>

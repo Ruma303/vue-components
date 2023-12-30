@@ -1,10 +1,13 @@
-    export default {
-        props: {
-            text: {
-                type: String,
-                required: true
-            }
+export default {
+    props: {
+        text: {
+            type: String,
+            required: true
         },
-        template: `<p>{{ text }}</p>`
-    }
+        emittedData: {
+            type: String,
+        }
+    },
+    template: `<p>{{ emittedData || text }}</p>`
+}
 
