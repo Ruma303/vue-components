@@ -1,4 +1,10 @@
     export default {
-        template: `<p><slot></p>`
+        props: {
+            text: {
+                type: String,
+                required: true
+            }
+        },
+        template: `<p>{{ text }}</p>`
     }
 

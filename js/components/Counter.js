@@ -14,11 +14,5 @@ export default {
             this.count++;
         }
     },
-    template: `
-            <div>
-            <p>{{ count }}</p>
-            <p>Double: {{ doubleCount }}</p>
-            <button @click="increment">Increment</button>
-            </div>
-        `
+    template: `<button @click="increment">Increment</button>`
 }
