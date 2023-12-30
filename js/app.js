@@ -1,9 +1,8 @@
 //% Importare i Componenti
+import Button from './components/Button.js';
+import Text from './components/Text.js';
+import Counter from './components/Counter.js';
 
-
-import Button from './components/Button';
-import Text from './components/Text';
-import Counter from './components/Counter';
 let app = {
     components: {
         'vue-button': Button,
@@ -12,3 +11,4 @@ let app = {
     },
 };
 Vue.createApp(app).mount('#app');
+

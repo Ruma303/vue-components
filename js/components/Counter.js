@@ -1,4 +1,4 @@
-export default Counter = {
+export default {
     data() {
         return {
             count: 0

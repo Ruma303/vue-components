@@ -1,3 +1,3 @@
-export default Button = {
+export default {
     template: `<button>Click</button>`
 }
