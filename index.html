@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script defer src="js/app.js" type="module"></script>
 </head>
+
 <body>
     <div id="app">
-        <!-- <vue-text text="testo della prop 1"/> -->
-
-        <vue-button @my-event="eventEmitted"></vue-button>
-        <vue-text :emitted-data="emittedData"></vue-text>
-
-        <!-- <vue-button id="unique-id" type="submit"></vue-button> -->
+        <level1>
+            <level2>
+                <level3></level3>
+            </level2>
+        </level1>
     </div>
 </body>
+
 </html>
