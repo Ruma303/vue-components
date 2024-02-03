@@ -6,6 +6,8 @@ let app = {
     mixins: [myMixin, counter],
     template: `
     <div>{{ mixinData }}</div>
+    <p>{{ capitalized }}</p>
+    <button @click="mixinMethod()">Attiva metodo Mixin</button>
     {{ count }}
     <button @click="increment()">Incrementa da App.vue</button>
     <vue-text />
@@ -20,3 +22,4 @@ let app = {
     },
 };
 Vue.createApp(app).mount('#app');
+
