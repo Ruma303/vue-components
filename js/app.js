@@ -1,14 +1,22 @@
-//% Importare i Componenti
-import Button from './components/Button.js';
 import Text from './components/Text.js';
-import Counter from './components/Counter.js';
+import myMixin from './mixins/myMixin.js';
+import counter from './mixins/counter.js';
 
 let app = {
+    mixins: [myMixin, counter],
+    template: `
+    <div>{{ mixinData }}</div>
+    {{ count }}
+    <button @click="increment()">Incrementa da App.vue</button>
+    <vue-text />
+    `,
+    data() {
+        return {
+            mixinData: 'Rome',
+        }
+    },
     components: {
-        'vue-button': Button,
         'vue-text': Text,
-        'counter': Counter
     },
 };
 Vue.createApp(app).mount('#app');
-
