@@ -24,4 +24,3 @@ export default {
     //, $attr
     /* template: `<button :$attrs>Invia $attrs</button>`, */
 }
-

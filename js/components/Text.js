@@ -8,6 +8,13 @@ export default {
             type: String,
         }
     },
-    template: `<p>{{ emittedData || text }}</p>`
+    template: `<p>{{ emittedData || text }}</p>`,
+    beforeCreate() {
+        console.log(this.$props);
+    },
+    watch: {
+        emittedData(newVal, prevVal) {
+            console.log(prevVal + ' -> ' + newVal);
+        }
+    }
 }
-
